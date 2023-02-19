@@ -1,0 +1,88 @@
+.formularios{
+    margin-top: -70vh;
+
+    font-family: 'Jockey One', sans-serif;
+
+    background: white;
+    max-width:250px;
+    min-height: 30vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;  
+}
+
+.backimg {
+    z-index: -1;
+}
+
+main h2{
+    font-weight: 200;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-field .underline::before{
+    content:'';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background:rgb(205, 205, 205)
+}
+.input-field .underline::after{
+    content:'';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(to left, #0d5eff, rgb(68, 0, 0));
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+}
+.input-field input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
+
+.input-field input {
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.input-field input::placeholder {
+    color: rgba(0, 23, 60, 0.5);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input[type="submit"] {
+    margin-top: 1.0rem;
+    padding: 0.4rem;
+    background: linear-gradient(to left, #0d5eff, rgb(68, 0, 0));
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.8px;
+    background: linear-gradient(to right, #0d5eff, rgb(68, 0, 0));
+}

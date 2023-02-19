@@ -1,0 +1,16 @@
+.product-slider {
+    display: flex;
+    justify-content: center;
+    margin-top: -70vh;
+  }
+
+.product {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 10px;
+    background: linear-gradient(to right, #00C4FF, #00FF66);
+    color: white; 
+    margin-top: -70vh;
+  }
